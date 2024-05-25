@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Query Executor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Execute SQL Query</h1>
+        <form method="POST" action="/execute">
+            <textarea name="query" rows="4" cols="50" placeholder="Enter your SQL query here..."></textarea><br>
+            <input type="submit" value="Execute">
+        </form>
+        <div class="result">
+            <p>{{ result|safe }}</p>
+        </div>
+    </div>
+</body>
+</html>
